@@ -116,7 +116,9 @@ const Header = () => {
             ))}
           </ul>
           <div className="order-1 ml-auto flex items-center md:ml-0 md:order-2">
-            <button className="btn btn-primary rounded-3xl">Get a demo</button>
+            <button className="btn btn-primary hidden rounded-3xl md:inline-block">
+              Get a demo
+            </button>
             <ThemeSwitcher />
             {/* <div
               className="search-icon"

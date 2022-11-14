@@ -40,7 +40,11 @@ function Service({ service, index }) {
           </div>
 
           {/* Content */}
-          <div className={`service-content ${!isOdd ? "md:order-1" : null}`}>
+          <div
+            className={`service-content mt-5 md:mt-0 ${
+              !isOdd ? "md:order-1" : null
+            }`}
+          >
             <h2 className="font-bold leading-[40px]">{service?.title}</h2>
             <p className="mt-4 mb-2">{service?.content}</p>
             <CtaLink href="#">Check it out</CtaLink>
