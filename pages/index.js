@@ -34,7 +34,7 @@ const Home = ({ frontmatter }) => {
       </section>
 
       {/* Features */}
-      <section className="section bg-blue-50 dark:bg-gray-900">
+      <section className="section bg-blue-light dark:bg-gray-900">
         <div className="container">
           <div className="text-center">
             <h2 className="font-secondary text-[40px] font-bold leading-[40px]">

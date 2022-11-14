@@ -8,7 +8,7 @@ import Link from "next/link";
 const Footer = () => {
   const { copyright } = config.params;
   return (
-    <footer className="section bg-theme-dark">
+    <footer className="section bg-blue-light">
       <div className="container text-center">
         {/* footer menu */}
         <ul className="mb-8 space-x-4">

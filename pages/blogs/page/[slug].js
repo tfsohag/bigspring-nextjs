@@ -70,7 +70,10 @@ export const getStaticPaths = () => {
 export const getStaticProps = async ({ params }) => {
   const currentPage = parseInt((params && params.slug) || 1);
   const { pagination } = config.settings;
-  const posts = getSinglePages(`content/${blog_folder}`);
+  const posts = getSinglePages(`content/${blog_folder}`).sort(
+    (post1, post2) =>
+      new Date(post2.frontmatter.date) - new Date(post1.frontmatter.date)
+  );
   const authors = getSinglePages("content/authors");
   const postIndex = await getListPage(`content/${blog_folder}`);
   const mdxContent = await parseMDX(postIndex.content);

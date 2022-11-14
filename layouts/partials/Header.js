@@ -119,7 +119,7 @@ const Header = () => {
             <button className="btn btn-primary hidden rounded-3xl md:inline-block">
               Get a demo
             </button>
-            <ThemeSwitcher />
+            {/* <ThemeSwitcher /> */}
             {/* <div
               className="search-icon"
               onClick={() => {

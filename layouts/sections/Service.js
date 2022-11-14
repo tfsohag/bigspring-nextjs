@@ -9,9 +9,7 @@ function Service({ service, index }) {
   const isOdd = index % 2 > 0;
 
   return (
-    <section
-      className={`section ${isOdd ? "bg-blue-50 dark:bg-gray-800" : null}`}
-    >
+    <section className={`section ${isOdd ? " bg-blue-light" : null}`}>
       <div className="container">
         <div className="items-center gap-8 md:grid md:grid-cols-2">
           {/* Carousel */}
