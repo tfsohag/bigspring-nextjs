@@ -1,11 +1,7 @@
 ---
 title: How to make toys from old Olarpaper
 date: 2022-04-04T05:00:00Z
-image: 
-categories: ["development"]
-authors: ["Wanda Maxima"]
-tags: ["diy", "toy"]
-draft: false
+image: "/images/blog-2.jpg"
 ---
 
 Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.

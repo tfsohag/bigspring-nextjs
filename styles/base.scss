@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  @apply bg-body font-primary font-normal leading-relaxed text-text dark:bg-darkmode-body dark:text-darkmode-text;
+  @apply bg-body font-primary font-normal leading-relaxed text-dark dark:bg-darkmode-body dark:text-darkmode-text;
 }
 
 h1,
@@ -18,29 +18,35 @@ h6 {
 h1,
 .h1 {
   @apply text-h1-sm md:text-h1 font-primary;
+  @apply text-text dark:text-white;
 }
 
 h2,
 .h2 {
   @apply text-h2-sm md:text-h2;
+  @apply text-text dark:text-white;
 }
 
 h3,
 .h3 {
   @apply text-h3-sm md:text-h3;
+  @apply text-text dark:text-white;
 }
 
 h4,
 .h4 {
   @apply text-h4;
+  @apply text-text dark:text-white;
 }
 
 h5,
 .h5 {
   @apply text-h5;
+  @apply text-text dark:text-white;
 }
 
 h6,
 .h6 {
   @apply text-h6;
+  @apply text-text dark:text-white;
 }

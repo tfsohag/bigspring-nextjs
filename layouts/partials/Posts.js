@@ -20,53 +20,6 @@ const Posts = ({ posts, authors }) => {
               layout="responsive"
             />
           )}
-          <ul className="mt-4 text-text">
-            <li className="mb-2 mr-4 inline-block">
-              {authors
-                .filter((author) =>
-                  post.frontmatter.authors
-                    .map((author) => slugify(author))
-                    .includes(slugify(author.frontmatter.title))
-                )
-                .map((author, i) => (
-                  <Link
-                    href={`/authors/${slugify(author.frontmatter.title)}`}
-                    key={`author-${i}`}
-                    className="inline-block hover:text-primary"
-                  >
-                    {author.frontmatter.image && (
-                      <span className="mr-2 align-top">
-                        <Image
-                          src={author.frontmatter.image}
-                          alt={author.frontmatter.title}
-                          height={25}
-                          width={25}
-                          className="h-6 w-6 rounded-full"
-                        />
-                      </span>
-                    )}
-                    <span>{author.frontmatter.title}</span>
-                  </Link>
-                ))}
-            </li>
-            <li className="mb-2 mr-4 inline-block">
-              {dateFormat(post.frontmatter.date)}
-            </li>
-            <li className="mb-2 mr-4 inline-block">
-              <ul>
-                {post.frontmatter.categories.map((category, i) => (
-                  <li className="inline-block" key={`category-${i}`}>
-                    <Link
-                      href={`/categories/${slugify(category)}`}
-                      className="mr-3 hover:text-primary"
-                    >
-                      &#9635; {humanize(category)}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </li>
-          </ul>
           <h2 className="h3 mb-2">
             <Link
               href={`/${blog_folder}/${post.slug}`}
