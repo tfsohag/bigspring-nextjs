@@ -5,113 +5,20 @@
       "url": "/"
     },
     {
-      "name": "Company",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "About",
-          "url": ""
-        },
-        {
-          "name": "How It Works",
-          "url": ""
-        },
-        {
-          "name": "Career",
-          "url": ""
-        },
-        {
-          "name": "Career Details",
-          "url": ""
-        }
-      ]
-    },
-    {
-      "name": "Products",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "CRM",
-          "sub": "Convert leads and close sales deals faster.",
-          "url": ""
-        },
-        {
-          "name": "Help Desk",
-          "sub": "Convert leads and close sales deals faster.",
-          "url": ""
-        },
-        {
-          "name": "Work Place",
-          "sub": "Convert leads and close sales deals faster.",
-          "url": ""
-        },
-        {
-          "name": "Analytics",
-          "sub": "Convert leads and close sales deals faster.",
-          "url": ""
-        }
-      ]
-    },
-    {
       "name": "Blog",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Blog Posts",
-          "url": ""
-        },
-        {
-          "name": "Blog Details",
-          "url": ""
-        },
-        {
-          "name": "Author",
-          "url": ""
-        },
-        {
-          "name": "Author Details",
-          "url": ""
-        }
-      ]
+      "url": "/"
     },
     {
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Pricing",
-          "url": "/authors"
-        },
-        {
-          "name": "Case Studies",
-          "url": ""
-        },
-        {
-          "name": "Case Studies Details",
-          "url": ""
-        },
-        {
-          "name": "Faq",
-          "url": ""
-        },
-        {
-          "name": "Privacy Policy",
-          "url": ""
-        }
-        ,
-        {
-          "name": "Terms & Condition",
-          "url": ""
-        }
-      ]
+      "name": "Pricing",
+      "url": "/"
     },
     {
       "name": "Contact",
-      "url": "/contact"
+      "url": "/"
+    },
+    {
+      "name": "FAQ",
+      "url": "/"
     }
   ],
   "footer": [

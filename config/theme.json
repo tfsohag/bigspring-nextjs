@@ -33,9 +33,9 @@
   },
   "fonts": {
     "font_family": {
-      "primary": "Poppins:wght@400;500;600;700",
+      "primary": "Lato:wght@300;400;700",
       "primary_type": "sans-serif",
-      "secondary": "Urbanist:wght@400;500;600;700",
+      "secondary": "",
       "secondary_type": "sans-serif",
       "icon": "Font Awesome 6 Free"
     },
