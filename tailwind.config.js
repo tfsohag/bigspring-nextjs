@@ -88,5 +88,5 @@ module.exports = {
     require("@tailwindcss/forms"),
     require("tailwind-bootstrap-grid")({ generateContainer: false }),
   ],
-  important: true,
+  // important: true,
 };

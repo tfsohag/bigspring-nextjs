@@ -1,11 +1,18 @@
 import config from "@config/config.json";
 import Base from "@layouts/Baseof";
 import BrandCarousel from "@layouts/components/BrandSlider";
-import ServiceCard from "@layouts/components/ServiceCard";
+import FeatureCard from "@layouts/components/FeatureCard";
 import VideoPlayer from "@layouts/components/VideoPlayer";
+import Service from "@layouts/partials/Service";
 import { sortByDate } from "@lib/utils/sortFunctions";
+import Server from "next/dist/server/base-server";
 import Image from "next/image";
 import Link from "next/link";
+const slides = [
+  "/images/service-slide-1.webp",
+  "/images/service-slide-2.webp",
+  "/images/service-slide-3.webp",
+];
 const Home = ({ posts, authors }) => {
   const { title } = config.site;
 
@@ -68,22 +75,22 @@ const Home = ({ posts, authors }) => {
               </Link>
             </div>
             <div className="grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:col-span-2">
-              <ServiceCard title="Cloud Support" icon="/svgs/cloud.svg">
+              <FeatureCard title="Cloud Support" icon="/svgs/cloud.svg">
                 Fugiat similique nobis porro cumque stinctio iusto quaerat
                 corrupti.
-              </ServiceCard>
-              <ServiceCard title="Object Oriented" icon="/svgs/cloud.svg">
+              </FeatureCard>
+              <FeatureCard title="Object Oriented" icon="/svgs/cloud.svg">
                 Fugiat similique nobis porro cumque stinctio iusto quaerat
                 corrupti.
-              </ServiceCard>
-              <ServiceCard title="24h Service" icon="/svgs/cloud.svg">
+              </FeatureCard>
+              <FeatureCard title="24h Service" icon="/svgs/cloud.svg">
                 Fugiat similique nobis porro cumque stinctio iusto quaerat
                 corrupti.
-              </ServiceCard>
-              <ServiceCard title="Faster Response" icon="/svgs/cloud.svg">
+              </FeatureCard>
+              <FeatureCard title="Faster Response" icon="/svgs/cloud.svg">
                 Fugiat similique nobis porro cumque stinctio iusto quaerat
                 corrupti.
-              </ServiceCard>
+              </FeatureCard>
             </div>
           </div>
         </div>
@@ -105,6 +112,20 @@ const Home = ({ posts, authors }) => {
           </div>
         </div>
       </section>
+
+      {/* service */}
+      <Service slides={slides} bg="bg-blue-50 dark:bg-gray-900">
+        <h2 className="font-bold leading-[40px]">
+          It is the most advanced digital marketing company.
+        </h2>
+        <p className="mt-4 leading-7">
+          Adipiscing elit Consequat tristique eget amet, tempus eu at
+          consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel
+          consquat. consectetur adipiscing elit. Consequat tristique eget amet,
+          tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet
+          sit vel consquat.
+        </p>
+      </Service>
     </Base>
   );
 };

@@ -38,7 +38,7 @@
   @apply prose max-w-none prose-headings:font-bold prose-h1:mb-4 prose-h1:text-h1-sm prose-h2:mb-4 prose-h2:mt-4 prose-h2:text-h2-sm prose-h3:mt-4 prose-h3:text-h3-sm prose-h4:mt-4 prose-h5:mb-4 prose-h6:mb-6 prose-blockquote:border-primary prose-blockquote:bg-light prose-blockquote:py-1 prose-blockquote:px-4 md:prose-h1:text-h1 md:prose-h2:text-h2 md:prose-h3:text-h3;
 }
 
-.service-card {
+.feature-card {
   box-shadow: 0 6px 24px -6px rgba(45,67,121,.15)!important;  
 }
 
@@ -68,6 +68,18 @@
   &:hover {
     svg path {
       @apply fill-primary;
+    }
+  }
+}
+
+.pagination{
+  @apply flex justify-center;
+
+  span {
+    @apply w-4 h-4 rounded-full border border-primary mx-2 inline-block;
+
+    &.swiper-pagination-bullet-active {
+      @apply bg-primary;
     }
   }
 }
