@@ -10,29 +10,69 @@
     },
     {
       "name": "Pricing",
-      "url": "/"
+      "url": ""
     },
     {
       "name": "Contact",
-      "url": "/"
+      "url": ""
     },
     {
       "name": "FAQ",
-      "url": "/"
+      "url": ""
     }
   ],
   "footer": [
     {
-      "name": "About",
-      "url": "/about"
+      "name": "Company",
+      "menu": [
+        {
+          "text": "About Us",
+          "url": "/about"
+        },
+        {
+          "text": "Pricing",
+          "url": "/pricing"
+        },
+        {
+          "text": "Quick Start",
+          "url": ""
+        }
+      ]
     },
     {
-      "name": "Contact",
-      "url": "/contact"
+      "name": "Product",
+      "menu": [
+        {
+          "text": "Features",
+          "url": ""
+        },
+        {
+          "text": "Platform",
+          "url": ""
+        },
+        {
+          "text": "Pricing",
+          "url": ""
+        }
+      ]
     },
     {
-      "name": "Elements",
-      "url": "/elements"
+      "name": "Support",
+      "menu": [
+        {
+          "text": "FAQ",
+          "url": ""
+        },
+        {
+          "text": "Privacy Policy",
+          "url": ""
+        },
+        {
+          "text": "Terms & Conditions",
+          "url": ""
+        }
+      ]
     }
+   
   ]
 }

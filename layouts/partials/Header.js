@@ -35,21 +35,11 @@ const Header = () => {
 
   return (
     <>
-      <header
-        className={`header transition-{padding}  duration-300 ${
-          navFixed ? "pt-3 pb-3 shadow" : "pt-6  pb-6"
-        }`}
-      >
+      <header className="header">
         <nav className="navbar container">
           {/* logo */}
           <div className="order-0">
-            <Logo
-              src={
-                mounted && (theme === "dark" || resolvedTheme === "dark")
-                  ? logo_darkmode
-                  : logo
-              }
-            />
+            <Logo src={logo} />
           </div>
           {/* navbar toggler */}
           <input id="nav-toggle" type="checkbox" className="hidden" />
@@ -80,7 +70,7 @@ const Header = () => {
 
           <ul
             id="nav-menu"
-            className="navbar-nav order-3 hidden w-full md:flex md:w-auto md:space-x-2 md:order-1"
+            className="navbar-nav order-3 w-full md:flex md:w-auto md:space-x-2 md:order-1"
           >
             {main.map((menu, i) => (
               <React.Fragment key={`menu-${i}`}>
@@ -114,10 +104,15 @@ const Header = () => {
                 )}
               </React.Fragment>
             ))}
+            <li className="md:hidden">
+              <button className="btn btn-primary rounded-3xl">
+                Get Started
+              </button>
+            </li>
           </ul>
           <div className="order-1 ml-auto flex items-center md:ml-0 md:order-2">
             <button className="btn btn-primary hidden rounded-3xl md:inline-block">
-              Get a demo
+              Get Started
             </button>
             {/* <ThemeSwitcher /> */}
             {/* <div

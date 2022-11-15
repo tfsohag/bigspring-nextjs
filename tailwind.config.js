@@ -7,7 +7,7 @@ let h5 = h6 * font_scale;
 let h4 = h5 * font_scale;
 let h3 = h4 * font_scale;
 let h2 = h3 * font_scale;
-let h1 = 3.725;
+let h1 = h2 * font_scale;
 let fontPrimary, fontPrimaryType, fontSecondary, fontSecondaryType;
 if (theme.fonts.font_family.primary) {
   fontPrimary = theme.fonts.font_family.primary
@@ -69,6 +69,12 @@ module.exports = {
       fontFamily: {
         primary: [fontPrimary, fontPrimaryType],
         secondary: [fontSecondary, fontSecondaryType],
+      },
+      boxShadow: {
+        light: "0 12px 24px -6px",
+      },
+      boxShadowColor: {
+        light: "rgba(45,67,121,.1)",
       },
     },
   },

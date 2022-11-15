@@ -1,7 +1,7 @@
 ---
 hero:
   title: "Let us solve your critical website development challenges"
-  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus"
+  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br/> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus"
   image: "/svgs/banner-art.svg"
 
 feature: 

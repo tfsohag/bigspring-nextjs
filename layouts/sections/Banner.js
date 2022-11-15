@@ -3,8 +3,8 @@ import React from "react";
 
 function Banner({ banner }) {
   return (
-    <section className="pt-[80px] pb-10">
-      <div className="mb-10 text-center">
+    <section className="section pb-0">
+      <div className="mb-8 text-center">
         <h2 className="mx-auto max-w-[400px] font-bold leading-[44px]">
           {banner.title}
         </h2>

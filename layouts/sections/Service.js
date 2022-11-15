@@ -9,11 +9,11 @@ function Service({ service, index }) {
   const isOdd = index % 2 > 0;
 
   return (
-    <section className={`section ${isOdd ? " bg-blue-light" : null}`}>
+    <section className={`section ${isOdd ? " bg-blue-light" : ""}`}>
       <div className="container">
         <div className="items-center gap-8 md:grid md:grid-cols-2">
           {/* Carousel */}
-          <div className={`service-carousel ${!isOdd ? "md:order-2" : null}`}>
+          <div className={`service-carousel ${!isOdd ? "md:order-2" : ""}`}>
             <Swiper
               modules={[Autoplay, Pagination]}
               pagination={{ el: paginationRef.current, clickable: true }}
@@ -40,7 +40,7 @@ function Service({ service, index }) {
           {/* Content */}
           <div
             className={`service-content mt-5 md:mt-0 ${
-              !isOdd ? "md:order-1" : null
+              !isOdd ? "md:order-1" : ""
             }`}
           >
             <h2 className="font-bold leading-[40px]">{service?.title}</h2>

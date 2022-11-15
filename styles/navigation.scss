@@ -1,4 +1,8 @@
 // navbar toggler
+#nav-menu {
+  @apply max-h-0 md:max-h-full overflow-hidden;
+  transition: max-height .3s ease;
+}
 input#nav-toggle:checked ~ label#show-button {
   @apply hidden;
 }
@@ -8,11 +12,11 @@ input#nav-toggle:checked ~ label#hide-button {
 }
 
 input#nav-toggle:checked ~ #nav-menu {
-  @apply block md:flex;
+  @apply max-h-[1000px] md:flex;
 }
 
 .header {
-  @apply sticky top-0 z-50 bg-white py-2;
+  @apply bg-white py-[9px] px-4 md:px-0;
 }
 
 // navbar items

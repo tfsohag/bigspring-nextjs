@@ -1,11 +1,11 @@
 // section style
 .section {
-  @apply pt-[60px] pb-[60px] lg:pt-[100px] lg:pb-[100px];
+  @apply pt-[70px] pb-[70px];
 }
 
 // container
 .container {
-  @apply mx-auto max-w-[1140px] px-3;
+  @apply mx-auto max-w-[1140px] px-4;
 }
 
 // form style
@@ -19,9 +19,14 @@
   li {
     @apply inline-block;
     a {
-      @apply block h-9 w-9 rounded-full border bg-primary text-center text-white;
+      @apply block h-9 w-9 rounded-full border border-primary hover:bg-primary text-center text-white transition;
+
       svg {
-        @apply m-auto h-9;
+        @apply m-auto h-9 fill-primary;
+      }
+
+      &:hover svg {
+        @apply fill-white;
       }
     }
   }
@@ -79,8 +84,7 @@
   @apply flex justify-center;
 
   span {
-    @apply w-4 h-4 rounded-full border border-primary mx-2 inline-block;
-
+    @apply w-[10px] h-[10px] rounded-full border border-primary mx-[5px] inline-block  cursor-pointer;
     &.swiper-pagination-bullet-active {
       @apply bg-primary;
     }
