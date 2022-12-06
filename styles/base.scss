@@ -45,3 +45,8 @@ h6,
 .h6 {
   @apply text-h6;
 }
+
+code {
+  @apply after:hidden before:hidden;
+  color: #e83e8c !important;
+}

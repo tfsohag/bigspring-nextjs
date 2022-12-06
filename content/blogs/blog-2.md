@@ -3,6 +3,11 @@ title: How to make toys from old Olarpaper
 desc: "Heading example Here is example of hedings. You can use this heading by following markdownify rules."
 image: "/images/blog-2.jpg"
 date: 2022-05-04T05:00:00Z
+id: 2
+button_solid:
+  label: "Read More"
+  href: "/blogs/blog-2"
+  rel: ""
 ---
 
 Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.

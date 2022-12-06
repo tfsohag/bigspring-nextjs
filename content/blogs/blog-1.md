@@ -3,6 +3,11 @@ title: "Adversus is a web-based dialer and practical CRM solution"
 desc: "Heading example Here is example of hedings. You can use this heading by following markdownify rules."
 image: "/images/blog-1.jpg"
 date: 2022-04-04T05:00:00Z
+id: 1
+button_solid:
+  label: "Read More"
+  href: "/blogs/blog-1"
+  rel: ""
 ---
 
 Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.

@@ -30,8 +30,8 @@ const BlogPagination = ({
     <Base title={title}>
       <section className="section">
         <div className="container">
-          {markdownify(title, "h1", "h2 mb-8 text-center")}
-          <Posts posts={currentPosts} authors={authors} />
+          {markdownify(title, "h1", "h1 text-center font-normal text-[56px]")}
+          <Posts posts={currentPosts} />
           <Pagination
             section={blog_folder}
             totalPages={totalPages}
@@ -74,7 +74,6 @@ export const getStaticProps = async ({ params }) => {
     (post1, post2) =>
       new Date(post2.frontmatter.date) - new Date(post1.frontmatter.date)
   );
-  const authors = getSinglePages("content/authors");
   const postIndex = await getListPage(`content/${blog_folder}`);
   const mdxContent = await parseMDX(postIndex.content);
 
@@ -82,7 +81,6 @@ export const getStaticProps = async ({ params }) => {
     props: {
       pagination: pagination,
       posts: posts,
-      authors: authors,
       currentPage: currentPage,
       postIndex: postIndex,
       mdxContent: mdxContent,
