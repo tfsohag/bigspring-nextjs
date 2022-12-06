@@ -1,9 +1,9 @@
 import CtaLink from "@layouts/components/CtaLink";
 import Image from "next/image";
-import Link from "next/link";
 import React, { useRef } from "react";
 import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 function Service({ service, index }) {
   const paginationRef = useRef(null);
   const isOdd = index % 2 > 0;

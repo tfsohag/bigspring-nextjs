@@ -36,11 +36,15 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-item {
-  @apply mx-3;
+  @apply lg:mx-3;
+
+  &:focus {
+    box-shadow: none;
+  }
 }
 
 .nav-link {
-  @apply p-3 text-base font-primary font-bold text-text transition hover:text-primary md:px-3 md:py-4;
+  @apply py-3 px-2 text-base font-primary font-bold text-text transition hover:text-primary lg:px-3 md:py-4;
 }
 
 .nav-dropdown {

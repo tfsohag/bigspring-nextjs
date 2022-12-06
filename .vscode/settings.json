@@ -1,3 +1,5 @@
 {
-   "prettier.bracketSameLine": true
+   "prettier.bracketSameLine": true,
+   "editor.useTabStops": false,
+   "prettier.useTabs": true
 }

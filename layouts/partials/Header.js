@@ -1,12 +1,10 @@
 import Logo from "@components/Logo";
-import ThemeSwitcher from "@components/ThemeSwitcher";
 import config from "@config/config.json";
 import menu from "@config/menu.json";
-import SearchModal from "@layouts/partials/SearchModal";
+import Button from "@layouts/components/Button";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { IoSearch } from "react-icons/io5";
 
 const Header = () => {
   // distructuring the main menu from menu object
@@ -70,7 +68,7 @@ const Header = () => {
 
           <ul
             id="nav-menu"
-            className="navbar-nav order-3 w-full md:flex md:w-auto md:space-x-2 md:order-1"
+            className="navbar-nav order-3 w-full md:flex md:w-auto md:order-1 lg:space-x-2"
           >
             {main.map((menu, i) => (
               <React.Fragment key={`menu-${i}`}>
@@ -104,31 +102,23 @@ const Header = () => {
                 )}
               </React.Fragment>
             ))}
+            <li className="nav-item inline-flex items-center">
+              <select className="m-2 border-none p-0 pr-8 font-primary font-bold text-text">
+                <option defaultValue="en">En</option>
+                <option value="de">De</option>
+              </select>
+            </li>
             <li className="md:hidden">
-              <button className="btn btn-primary rounded-3xl">
+              <Button className="btn btn-primary z-0 py-[14px]" href="#" rel="">
                 Get Started
-              </button>
+              </Button>
             </li>
           </ul>
-          <div className="order-1 ml-auto flex items-center md:ml-0 md:order-2">
-            <button className="btn btn-primary hidden rounded-3xl md:inline-block">
+          <div className="order-1 ml-auto hidden items-center md:ml-0 md:flex md:order-2">
+            <Button className="btn btn-primary z-0 py-[14px]" href="#" rel="">
               Get Started
-            </button>
-            {/* <ThemeSwitcher /> */}
-            {/* <div
-              className="search-icon"
-              onClick={() => {
-                setSearchModal(true);
-              }}
-            >
-              <IoSearch />
-            </div> */}
+            </Button>
           </div>
-
-          {/* <SearchModal
-            searchModal={searchModal}
-            setSearchModal={setSearchModal}
-          /> */}
         </nav>
       </header>
     </>
