@@ -15,7 +15,7 @@ const Pagination = ({ section, currentPage, totalPages }) => {
     <>
       {totalPages > 1 && (
         <nav
-          className="mb-4 flex justify-center -space-x-px"
+          className="mb-4 mt-10 flex justify-center -space-x-px"
           aria-label="Pagination"
         >
           {/* previous */}

@@ -1,11 +1,10 @@
 import CtaLink from "@layouts/components/CtaLink";
 import Image from "next/image";
-import React, { useRef } from "react";
+import React from "react";
 import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 function Service({ service, index }) {
-  const paginationRef = useRef(null);
   const isOdd = index % 2 > 0;
 
   return (
@@ -16,7 +15,7 @@ function Service({ service, index }) {
           <div className={`service-carousel ${!isOdd ? "md:order-2" : ""}`}>
             <Swiper
               modules={[Autoplay, Pagination]}
-              pagination={{ el: paginationRef.current, clickable: true }}
+              pagination={service.images.length > 1 ? true : false}
               autoplay={{
                 delay: 5000,
                 disableOnInteraction: false,
@@ -29,11 +28,6 @@ function Service({ service, index }) {
                   <Image src={slide.url} alt="" width={600} height={500} />
                 </SwiperSlide>
               ))}
-
-              {/* Pagination */}
-              {service?.images.length > 1 && (
-                <div className="pagination" ref={paginationRef}></div>
-              )}
             </Swiper>
           </div>
 

@@ -63,9 +63,7 @@ const Posts = ({ posts }) => {
               {post.frontmatter.title}
             </Link>
           </h2>
-          <p className="text-text">
-            {post.content.slice(0, Number(summary_length))}...
-          </p>
+          <p className="text-text">{post.frontmatter.desc}</p>
           <Button
             className="btn btn-primary mt-4"
             href={post.frontmatter.button_solid.href}
