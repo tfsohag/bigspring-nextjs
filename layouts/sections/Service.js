@@ -15,7 +15,9 @@ function Service({ service, index }) {
           <div className={`service-carousel ${!isOdd ? "md:order-2" : ""}`}>
             <Swiper
               modules={[Autoplay, Pagination]}
-              pagination={service.images.length > 1 ? true : false}
+              pagination={
+                service.images.length > 1 ? { clickable: true } : false
+              }
               autoplay={{
                 delay: 5000,
                 disableOnInteraction: false,
