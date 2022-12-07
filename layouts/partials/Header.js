@@ -11,25 +11,10 @@ const Header = () => {
   const { main } = menu;
 
   // states declaration
-  const [navFixed, setNavFixed] = useState(false);
-  const [searchModal, setSearchModal] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  const [navOpen, setNavOpen] = useState(false);
 
   // logo source
   const { logo, logo_darkmode } = config.site;
-  const { theme, resolvedTheme } = useTheme();
-  useEffect(() => setMounted(true), []);
-
-  useEffect(() => {
-    const changeNavbarBackground = () => {
-      if (window.pageYOffset >= 1) {
-        setNavFixed(true);
-      } else {
-        setNavFixed(false);
-      }
-    };
-    window.addEventListener("scroll", changeNavbarBackground);
-  });
 
   return (
     <>
@@ -40,35 +25,23 @@ const Header = () => {
             <Logo src={logo} />
           </div>
           {/* navbar toggler */}
-          <input id="nav-toggle" type="checkbox" className="hidden" />
-          <label
+          <button
             id="show-button"
-            htmlFor="nav-toggle"
             className="order-2 flex cursor-pointer items-center md:hidden md:order-1"
+            onClick={() => setNavOpen(!navOpen)}
           >
             <svg className="h-6 fill-current" viewBox="0 0 20 20">
               <title>Menu Open</title>
               <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z" />
             </svg>
-          </label>
-          <label
-            id="hide-button"
-            htmlFor="nav-toggle"
-            className="order-2 hidden cursor-pointer items-center md:order-1"
-          >
-            <svg className="h-6 fill-current" viewBox="0 0 20 20">
-              <title>Menu Close</title>
-              <polygon
-                points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
-                transform="rotate(45 10 10)"
-              />
-            </svg>
-          </label>
+          </button>
           {/* /navbar toggler */}
 
           <ul
             id="nav-menu"
-            className="navbar-nav order-3 w-full md:flex md:w-auto md:order-1 lg:space-x-2"
+            className={`navbar-nav hidden ${
+              navOpen ? "!block !max-h-[1000px]" : ""
+            } order-3 w-full md:flex md:w-auto md:order-1 lg:space-x-2`}
           >
             {main.map((menu, i) => (
               <React.Fragment key={`menu-${i}`}>

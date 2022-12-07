@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="row">
           {footer.map((col) => {
             return (
-              <div className="mb-12 sm:col-6 md:col-3" key={col.name}>
+              <div className="mb-12 sm:col-6 lg:col-3" key={col.name}>
                 <h4>{col.name}</h4>
                 <ul className="mt-6">
                   {col?.menu.map((item) => (
@@ -29,7 +29,7 @@ const Footer = () => {
             );
           })}
           {/* social icons */}
-          <div className="md-12 sm:col-6 md:col-3">
+          <div className="md-12 sm:col-6 lg:col-3">
             <Link href="/">
               <Image
                 src={config.site.logo}
