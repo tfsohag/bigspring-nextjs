@@ -14,5 +14,12 @@
 }
 
 .btn-outline-primary {
-  @apply text-primary border-primary border-2 bg-transparent hover:bg-primary hover:text-white;
+  @apply relative text-text border-primary border bg-transparent rounded-[30px] hover:border-transparent hover:text-primary;
+
+  &:after {
+    @apply w-full h-full rounded-[30px] absolute left-1/2 top-1/2 translate-x-[-50%]  translate-y-[-50%] content-[''] bg-transparent border border-primary transition-all z-[0] opacity-0;
+  }
+  &:hover::after {
+    @apply  w-[110%] h-[110%] opacity-100
+  }
 }

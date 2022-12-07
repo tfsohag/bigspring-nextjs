@@ -2,9 +2,8 @@ import Logo from "@components/Logo";
 import config from "@config/config.json";
 import menu from "@config/menu.json";
 import Button from "@layouts/components/Button";
-import { useTheme } from "next-themes";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 const Header = () => {
   // distructuring the main menu from menu object
