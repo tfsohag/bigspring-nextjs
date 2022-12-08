@@ -52,33 +52,10 @@ const Contact = ({ data }) => {
           <div className="content col-12 md:col-6 lg:col-5">
             {markdownify(info.title, "h4")}
             {markdownify(info.description, "p", "mt-4")}
-            <ul className="mt-5">
+            <ul className="contact-list mt-5">
               {info.contacts.map((contact, index) => (
                 <li key={index}>
-                  {Object.entries(contact).map(([key, value]) =>
-                    key !== "email" ? (
-                      <strong
-                        className="capitalize text-[#777]"
-                        key={key + "_" + value}
-                      >
-                        {key}: {value}
-                      </strong>
-                    ) : (
-                      <strong
-                        className="capitalize text-[#777]"
-                        key={key + "_" + value}
-                      >
-                        {key + ": "}
-                        <Button
-                          className="font-semibold text-[#777]"
-                          href={value.href}
-                          rel=""
-                        >
-                          {value.domain}
-                        </Button>
-                      </strong>
-                    )
-                  )}
+                  {markdownify(contact, "strong", "text-[#777]")}
                 </li>
               ))}
             </ul>

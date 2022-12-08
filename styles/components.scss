@@ -137,3 +137,10 @@
     }
   }
 }
+
+//contact
+.contact-list {
+  a {
+    @apply font-semibold text-[#777];
+  }
+}
