@@ -1,17 +1,15 @@
-// navbar toggler
-#nav-menu {
-  @apply overflow-hidden w-full md:w-auto md:max-h-[100%];
-}
+
 
 
 .header {
-  @apply bg-white py-[9px] px-4 md:px-0;
+  @apply bg-white py-[14px] px-4 md:px-0 md:py-[9px];
 }
 
 // navbar items
 .navbar {
   @apply relative flex flex-wrap items-center justify-between;
 }
+
 
 .navbar-brand {
   @apply text-xl font-semibold text-dark;
@@ -22,6 +20,11 @@
 
 .navbar-nav {
   @apply text-center md:text-left;
+}
+
+// navbar toggler
+#nav-menu {
+  @apply overflow-hidden w-full md:w-auto md:max-h-[100%];
 }
 
 .nav-item {
