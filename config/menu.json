@@ -61,15 +61,15 @@
       "menu": [
         {
           "text": "FAQ",
-          "url": ""
+          "url": "/faq"
         },
         {
           "text": "Privacy Policy",
-          "url": ""
+          "url": "#"
         },
         {
           "text": "Terms & Conditions",
-          "url": ""
+          "url": "#"
         }
       ]
     }
