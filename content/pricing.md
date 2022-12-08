@@ -47,4 +47,14 @@ plans:
       href: "#"
       rel: ""
       btn_type: outline
+
+cta:
+  title: Need a larger plan?
+  desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.
+  image: '/svgs/cta.svg'
+  button_solid:
+    label: "Contact Us"
+    href: "/contact"
+    rel: ""
+    
 ---

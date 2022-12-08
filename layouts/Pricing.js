@@ -4,32 +4,39 @@ import Cta from "./sections/Cta";
 
 function Pricing({ data }) {
   const {
-    frontmatter: { title, plans },
+    frontmatter: { title, plans, cta },
   } = data;
   return (
     <>
-      <section className="section">
+      <section className="section pb-0">
         <div className="container">
           <h1 className="text-center font-normal">{title}</h1>
-          <div className="section row -mt-10 md:mt-0">
+          <div className="section row -mt-10 justify-center md:mt-0">
             {plans.map((plan, index) => (
-              <div className="col-12 md:col-4" key={plan.title + index}>
+              <div
+                className={`col-12 md:col-4 ${
+                  !plan.recommended ? "lg:px-0" : "col--recommended"
+                }`}
+                key={plan.title + index}
+              >
                 <div
                   className={`card text-center ${
                     plan.recommended ? "card--recommended" : ""
                   }`}
                 >
-                  <h3>{plan.title}</h3>
+                  <h4>{plan.title}</h4>
                   <div className="mt-5">
-                    <span className="text-6xl text-text">{plan.price}</span>
+                    <span className="text-5xl text-text">{plan.price}</span>
                     <span>/ {plan.type}</span>
                   </div>
-                  <h5 className="mt-2 font-normal text-gray-400">
+                  <h5 className="mt-2 font-normal text-[#777]">
                     {plan.subtitle}
                   </h5>
-                  <ul className="mt-3">
+                  <ul className="mt-5">
                     {plan.features.map((feature, index) => (
-                      <li key={index}>{feature}</li>
+                      <li className="mb-[10px] leading-5" key={index}>
+                        {feature}
+                      </li>
                     ))}
                   </ul>
                   <Button
@@ -49,7 +56,7 @@ function Pricing({ data }) {
           </div>
         </div>
       </section>
-      {/* <Cta /> */}
+      <Cta cta={cta} />
     </>
   );
 }

@@ -35,7 +35,7 @@
 // form style
 .form-input,
 .form-textarea {
-  @apply border-border focus:border-primary focus:ring-transparent;
+  @apply border-border focus:border-primary focus:ring-transparent py-[6px];
 }
 
 // content style
@@ -114,7 +114,11 @@
 .card {
   @apply border mt-10 md:mt-0 border-[rgba(0,0,0,.125)] shadow-light px-5 py-12 bg-white py-12 px-5;
 
-  &--recommended {
-    @apply md:-mx-8 md:-my-6 relative z-10 shadow-[0_1rem_3rem_rgba(0,0,0,.175)] border-0;
+}
+.col--recommended {
+  @apply md:-mx-8 md:-my-6 relative z-10;
+
+  .card {
+    @apply border-0 shadow-[0_1rem_3rem_rgba(0,0,0,.175)];
   }
 }
