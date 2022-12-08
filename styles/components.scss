@@ -122,3 +122,10 @@
     @apply border-0 shadow-[0_1rem_3rem_rgba(0,0,0,.175)];
   }
 }
+
+//faq
+.faq-body {
+  a {
+    @apply text-primary;
+  }
+}

@@ -57,14 +57,20 @@ const Contact = ({ data }) => {
                 <li key={index}>
                   {Object.entries(contact).map(([key, value]) =>
                     key !== "email" ? (
-                      <strong className="capitalize" key={key + "_" + value}>
+                      <strong
+                        className="capitalize text-[#777]"
+                        key={key + "_" + value}
+                      >
                         {key}: {value}
                       </strong>
                     ) : (
-                      <strong className="capitalize" key={key + "_" + value}>
+                      <strong
+                        className="capitalize text-[#777]"
+                        key={key + "_" + value}
+                      >
                         {key + ": "}
                         <Button
-                          className="font-semibold"
+                          className="font-semibold text-[#777]"
                           href={value.href}
                           rel=""
                         >
