@@ -2,6 +2,7 @@ import Social from "@components/Social";
 import config from "@config/config.json";
 import menu from "@config/menu.json";
 import social from "@config/social.json";
+import Button from "@layouts/components/Button";
 import { markdownify } from "@lib/utils/textConverter";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,7 +22,9 @@ const Footer = () => {
                 <ul className="mt-6">
                   {col?.menu.map((item) => (
                     <li className="mb-1" key={item.text}>
-                      {item.text}
+                      <Button href={item.url} rel="">
+                        {item.text}
+                      </Button>
                     </li>
                   ))}
                 </ul>

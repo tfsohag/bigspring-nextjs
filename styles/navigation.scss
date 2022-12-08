@@ -1,7 +1,6 @@
 // navbar toggler
 #nav-menu {
-  @apply max-h-0 md:max-h-full overflow-hidden;
-  transition: max-height .3s ease;
+  @apply overflow-hidden w-full md:w-auto md:max-h-[100%];
 }
 
 

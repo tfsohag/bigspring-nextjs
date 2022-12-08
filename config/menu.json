@@ -27,7 +27,7 @@
       "menu": [
         {
           "text": "About Us",
-          "url": "/about"
+          "url": "#"
         },
         {
           "text": "Pricing",
@@ -35,7 +35,7 @@
         },
         {
           "text": "Quick Start",
-          "url": ""
+          "url": "#"
         }
       ]
     },
@@ -44,15 +44,15 @@
       "menu": [
         {
           "text": "Features",
-          "url": ""
+          "url": "#"
         },
         {
           "text": "Platform",
-          "url": ""
+          "url": "#"
         },
         {
           "text": "Pricing",
-          "url": ""
+          "url": "/pricing"
         }
       ]
     },
