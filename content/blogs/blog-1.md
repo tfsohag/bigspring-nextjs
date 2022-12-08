@@ -152,3 +152,5 @@ raw Markdown line up prettily. You can also use inline Markdown.
 ---
 
 ##### Youtube video
+
+<YoutubePlayer id="C0DPdy98e4c" title="YouTube Video" />
