@@ -3,9 +3,13 @@ import config from "@config/config.json";
 import menu from "@config/menu.json";
 import Button from "@layouts/components/Button";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 
 const Header = () => {
+  //router
+  const router = useRouter();
+
   // distructuring the main menu from menu object
   const { main } = menu;
 
@@ -13,7 +17,7 @@ const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
 
   // logo source
-  const { logo, logo_darkmode } = config.site;
+  const { logo } = config.site;
 
   return (
     <>
@@ -87,7 +91,13 @@ const Header = () => {
                     </li>
                   ) : (
                     <li className="nav-item">
-                      <Link href={menu.url} className="nav-link block">
+                      <Link
+                        href={menu.url}
+                        onClick={() => setNavOpen(false)}
+                        className={`nav-link block ${
+                          router.asPath === menu.url ? "nav-link--active" : ""
+                        }`}
+                      >
                         {menu.name}
                       </Link>
                     </li>

@@ -12,7 +12,7 @@ const Posts = ({ posts }) => {
           <div className="col-12 md:col-6">
             {posts[0].frontmatter.image && (
               <Image
-                className="rounded-lg"
+                className="h-auto w-full rounded-lg"
                 src={posts[0].frontmatter.image}
                 alt={posts[0].frontmatter.title}
                 width={540}
