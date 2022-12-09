@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Posts = ({ posts }) => {
-  const { summary_length, blog_folder } = config.settings;
+  const { blog_folder } = config.settings;
   return (
     <div className="section row pb-0">
       <div className="col-12 pb-12 lg:pb-24">
@@ -31,9 +31,6 @@ const Posts = ({ posts }) => {
               </Link>
             </h2>
             <p className="text-text">{posts[0].frontmatter.desc}</p>
-            {/* <p className="text-text">
-              {posts[0].content.slice(0, Number(summary_length))}...
-            </p> */}
             <Button
               className="btn btn-primary mt-4"
               href={posts[0].frontmatter.button_solid.href}
