@@ -3,8 +3,7 @@
     "title": "Bigspring-light-nextjs",
     "base_url": "/",
     "favicon": "/images/favicon.png",
-    "logo": "/images/logo-dark.webp",
-    "logo_darkmode": "/images/logo-light.webp",
+    "logo": "/images/logo.png",
     "logo_width": "200",
     "logo_height": "48",
     "logo_text": "Next Boilerplate"
