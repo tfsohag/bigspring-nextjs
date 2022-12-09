@@ -6,9 +6,9 @@ function FeatureCard({ data }) {
   return (
     <div className="feature-card rounded-xl bg-white p-5 pb-8 text-center">
       {icon && (
-        <Image className="mx-auto" src={icon} width={45} height={45} alt="" />
+        <Image className="mx-auto" src={icon} width={30} height={30} alt="" />
       )}
-      <div>
+      <div className="mt-4">
         <h5>{title}</h5>
         <p className="mt-3">{desc}</p>
       </div>
