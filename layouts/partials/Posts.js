@@ -33,10 +33,10 @@ const Posts = ({ posts }) => {
             <p className="text-text">{posts[0].frontmatter.desc}</p>
             <Button
               className="btn btn-primary mt-4"
-              href={posts[0].frontmatter.button_solid.href}
-              rel={posts[0].frontmatter.button_solid.rel}
+              href={`/${blog_folder}/${posts[0].slug}`}
+              rel=""
             >
-              {posts[0].frontmatter.button_solid.label}
+              Read More
             </Button>
           </div>
         </div>
@@ -63,10 +63,10 @@ const Posts = ({ posts }) => {
           <p className="text-text">{post.frontmatter.desc}</p>
           <Button
             className="btn btn-primary mt-4"
-            href={post.frontmatter.button_solid.href}
-            rel={post.frontmatter.button_solid.rel}
+            href={`/${blog_folder}/${post.slug}`}
+            rel=""
           >
-            {post.frontmatter.button_solid.label}
+            Read More
           </Button>
         </div>
       ))}

@@ -3,11 +3,7 @@ title: "Adversus is a web-based dialer and practical CRM solution"
 desc: "Heading example Here is example of hedings. You can use this heading by following markdownify rules."
 image: "/images/blog-4.jpg"
 date: 2022-08-04T05:00:00Z
-id: 5
-button_solid:
-  label: "Read More"
-  href: "/blogs/blog-5"
-  rel: ""
+
 ---
 
 
@@ -148,7 +144,7 @@ raw Markdown line up prettily. You can also use inline Markdown.
 
 ##### Images
 
-![service](/images/service-slide-1.webp "service")
+![service](/images/service-slide-1.png "service")
 
 ---
 

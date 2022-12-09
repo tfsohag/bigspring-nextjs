@@ -3,11 +3,7 @@ title: What you need to know about Photography
 desc: "Heading example Here is example of hedings. You can use this heading by following markdownify rules."
 image: "/images/blog-3.jpg"
 date: 2022-06-02T06:00:00+00:00
-id: 3
-button_solid:
-  label: "Read More"
-  href: "/blogs/blog-3"
-  rel: ""
+
 ---
 
 ##### Heading example
@@ -147,7 +143,7 @@ raw Markdown line up prettily. You can also use inline Markdown.
 
 ##### Images
 
-![service](/images/service-slide-1.webp "service")
+![service](/images/service-slide-1.png "service")
 
 ---
 
