@@ -51,7 +51,6 @@ module.exports = {
         body: theme.colors.default.theme_color.body,
         border: theme.colors.default.theme_color.border,
         "theme-light": theme.colors.default.theme_color.theme_light,
-        "blue-light": "#edf6f5",
       },
       fontSize: {
         base: font_base + "px",
@@ -70,10 +69,7 @@ module.exports = {
         secondary: [fontSecondary, fontSecondaryType],
       },
       boxShadow: {
-        light: "0 12px 24px -6px",
-      },
-      boxShadowColor: {
-        light: "rgba(45,67,121,.1)",
+        light: "0 12px 24px -6px rgba(45,67,121,0.1)",
       },
     },
   },

@@ -13,6 +13,7 @@
 
 .navbar-brand {
   @apply text-xl font-semibold text-dark;
+
   image {
     @apply max-h-full max-w-full;
   }
@@ -22,7 +23,6 @@
   @apply text-center md:text-left;
 }
 
-// navbar toggler
 #nav-menu {
   @apply overflow-hidden w-full md:w-auto md:max-h-[100%];
 }
@@ -39,35 +39,6 @@
   @apply py-3 px-2 text-base font-primary font-bold text-text transition hover:text-primary lg:px-3 md:py-4;
 }
 
-.nav-dropdown {
-  @apply mr-0;
-}
 
-.nav-dropdown-list {
-  @apply z-10 rounded-lg bg-white p-4 shadow;
-}
 
-.nav-dropdown-item {
-  @apply mb-1;
-}
 
-.nav-dropdown-link {
-  @apply min-w-[150px] py-1 text-lg font-semibold text-dark transition hover:text-primary ;
-}
-
-// search style
-.search-icon {
-  @apply cursor-pointer p-2 text-xl text-dark hover:text-primary;
-}
-.search-modal {
-  @apply invisible absolute top-0 left-0 right-0 z-10 h-10 bg-white opacity-0 transition md:h-full;
-  .form-input {
-    @apply h-full w-full border-0 text-lg;
-  }
-  .search-close {
-    @apply absolute top-1/2 right-2 -translate-y-1/2 p-3 text-h4;
-  }
-  &.open {
-    @apply visible opacity-100;
-  }
-}

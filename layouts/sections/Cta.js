@@ -6,7 +6,7 @@ import React from "react";
 function Cta({ cta }) {
   return (
     <section className="section px-4">
-      <div className="section container rounded-xl shadow-light">
+      <div className="section container rounded-xl shadow">
         <div className="row  mx-auto items-center justify-center">
           <div className="md:col-5 lg:col-4">
             <Image

@@ -51,39 +51,9 @@
 
 //feature card
 .feature-card {
-  box-shadow: 0 6px 24px -6px rgba(45,67,121,.15)!important;  
+  @apply hover:shadow duration-200 ease-in-out transition-all	;
 }
 
-//play button
-.play-btn {
-  svg  path {
-    transition: fill .2s;
-    transition-delay: .3s;
-
-  }
-
-  &::before {
-    @apply delay-200 absolute z-[-1] h-[85px] w-[85px] scale-0 rounded-full bg-white transition-all duration-300	 content-[''];
-  }
-
-  &::after {
-    @apply absolute z-[-2] h-[75px] w-[130px] rounded-lg bg-primary/60 transition-all duration-500  content-[''] ;
-  }
-
-  &:hover:before {
-    @apply scale-100;
-  }
-
-  &:hover::after {
-    @apply h-full  w-full;
-  }
-
-  &:hover {
-    svg path {
-      @apply fill-primary;
-    }
-  }
-}
 
 //swiper pagination
 .service-carousel .swiper-pagination {
@@ -112,14 +82,14 @@
 
 //card
 .card {
-  @apply border mt-10 md:mt-0 border-[rgba(0,0,0,.125)] shadow-light px-5 py-12 bg-white py-12 px-5;
+  @apply border mt-10 md:mt-0 border-[rgba(0,0,0,.125)] shadow px-5 py-12 bg-white py-12 px-5;
 
 }
 .col--recommended {
   @apply md:-mx-8 md:-my-6 relative z-10;
 
   .card {
-    @apply border-0 shadow-[0_1rem_3rem_rgba(0,0,0,.175)];
+    @apply border-0 shadow-[0_1rem_3rem_rgba(0,0,0,.175)] rounded-md;
   }
 }
 
@@ -141,6 +111,6 @@
 //contact
 .contact-list {
   a {
-    @apply font-semibold text-[#777];
+    @apply font-semibold text-dark;
   }
 }

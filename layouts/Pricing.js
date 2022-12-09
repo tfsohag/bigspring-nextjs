@@ -19,17 +19,13 @@ function Pricing({ data }) {
                 }`}
                 key={plan.title + index}
               >
-                <div
-                  className={`card text-center ${
-                    plan.recommended ? "card--recommended" : ""
-                  }`}
-                >
+                <div className="card text-center">
                   <h4>{plan.title}</h4>
                   <div className="mt-5">
                     <span className="text-5xl text-text">{plan.price}</span>
                     <span>/ {plan.type}</span>
                   </div>
-                  <h5 className="mt-2 font-normal text-[#777]">
+                  <h5 className="mt-2 font-normal text-dark">
                     {plan.subtitle}
                   </h5>
                   <ul className="mt-5">

@@ -3,7 +3,6 @@ import { shortcodes } from "@shortcodes/all";
 import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
 import Base from "./Baseof";
-import Button from "./components/Button";
 
 const PostSingle = ({ frontmatter, content, mdxContent }) => {
   let { description, title, image } = frontmatter;

@@ -4,7 +4,7 @@ import React from "react";
 
 function Features({ content: feature }) {
   return (
-    <section className="section bg-blue-light">
+    <section className="section bg-theme-light">
       <div className="container">
         <div className="text-center">
           <h2>{markdownify(feature.title)}</h2>

@@ -4,7 +4,7 @@ import React from "react";
 function FeatureCard({ data }) {
   const { title, icon, desc } = data;
   return (
-    <div className="feature-card rounded-xl bg-white p-5 pb-8 text-center dark:bg-gray-800">
+    <div className="feature-card rounded-xl bg-white p-5 pb-8 text-center">
       {icon && (
         <Image className="mx-auto" src={icon} width={45} height={45} alt="" />
       )}

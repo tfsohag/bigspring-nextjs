@@ -12,7 +12,7 @@ function Faq({ data }) {
         <div className="section row  -mt-6">
           {faqs.map((faq, index) => (
             <div key={index} className="col-12 mt-6 md:col-6">
-              <div className="p-12  shadow-light">
+              <div className="p-12  shadow">
                 <div className="faq-head relative">
                   {markdownify(faq.title, "h4")}
                 </div>

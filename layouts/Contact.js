@@ -55,7 +55,7 @@ const Contact = ({ data }) => {
             <ul className="contact-list mt-5">
               {info.contacts.map((contact, index) => (
                 <li key={index}>
-                  {markdownify(contact, "strong", "text-[#777]")}
+                  {markdownify(contact, "strong", "text-dark")}
                 </li>
               ))}
             </ul>

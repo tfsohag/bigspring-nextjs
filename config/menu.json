@@ -26,10 +26,6 @@
       "name": "Company",
       "menu": [
         {
-          "text": "About Us",
-          "url": "#"
-        },
-        {
           "text": "Pricing",
           "url": "/pricing"
         },

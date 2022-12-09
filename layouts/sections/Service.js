@@ -8,7 +8,7 @@ function Service({ service, index }) {
   const isOdd = index % 2 > 0;
 
   return (
-    <section className={`section ${isOdd ? " bg-blue-light" : ""}`}>
+    <section className={`section ${isOdd ? " bg-theme-light" : ""}`}>
       <div className="container">
         <div className="items-center gap-8 md:grid md:grid-cols-2">
           {/* Carousel */}
@@ -25,9 +25,9 @@ function Service({ service, index }) {
               init={service?.images > 1 ? false : true}
             >
               {/* Slides */}
-              {service?.images.map((slide) => (
-                <SwiperSlide key={slide.id}>
-                  <Image src={slide.url} alt="" width={600} height={500} />
+              {service?.images.map((slide, index) => (
+                <SwiperSlide key={index}>
+                  <Image src={slide} alt="" width={600} height={500} />
                 </SwiperSlide>
               ))}
             </Swiper>

@@ -19,7 +19,7 @@ plans:
 
   - title: Professional Plan
     subtitle: Best For Professionals
-    price: 49
+    price: 69
     type: month
     recommended: true
     features:
@@ -36,7 +36,7 @@ plans:
 
   - title: Business Plan
     subtitle: Best For Large Individuals
-    price: 49
+    price: 99
     type: month
     features:
       - Express Service
